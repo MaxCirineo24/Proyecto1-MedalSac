@@ -3,14 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tu Empresa - Página Principal</title>
+<title>Medal SAC</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<style>
+
+    .swiper-container {
+        width: 100%;
+        height: 400px; 
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+</style>
 </head>
 <body>
 <header>
     <div class="navbar">
         <div class="logo">
-            <img src="images/logomedal.png" alt="Logo de tu empresa" width="300" height="100">
+            <img src="images/logomedal.png" alt="Logo de tu empresa" width="250" height="100">
         </div>
         <nav>
             <ul>
@@ -36,13 +50,32 @@
     </div>
 </header>
 
-<div class="carousel">
-    
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/camion.png" alt="Camión 1">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/camion2.png" alt="Camión 2">
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 
 <footer>
     
 </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </body>
 </html>
