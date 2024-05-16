@@ -1,0 +1,390 @@
+*{
+  overflow-x:hidden ;
+}
+/* carrusel de imagenes home  */
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5% !important;
+}
+
+.ofertas_responsive{
+  display: none;
+}
+
+.ofertas{
+  display: block;
+}
+/* carrusel de imagenes home  */
+
+
+/* Nuestros carros  titulo  */
+.contenedor_vehiculos_tipos_titulo{
+  height: auto;
+  width: 100%;
+  padding: 60px 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_vehiculos_tipos_titulo h1{
+  color: #dc5719;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+/* Nuestros carros  titulo*/
+
+/* Nuestros carros  galeria*/
+.contenedor_vehiculos_tipos_galeria {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos flexibles se envuelvan a la siguiente línea */
+  justify-content: center;
+  padding: 0 0 20px 0;
+}
+
+.gallery {
+  width: 100%; /* Ancho completo */
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos flexibles se envuelvan a la siguiente línea */
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 260px; /* Ancho fijo para cada elemento de la galería */
+  height: 300px; /* Altura fija para cada elemento de la galería */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(0.9);
+}
+
+.gallery_titulo{
+  margin-top: 5px;
+  height: 10%;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-family: a;
+  letter-spacing: 0.6px;
+}
+/* Nuestros carros  galeria*/
+
+/* Contenedor imagen medio  */
+
+.contenedor_imagen_medio{
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+
+.contenedor_imagen_medio img{
+  width: 100%;
+  height: auto;
+}
+
+/* Contenedor imagen medio  */
+
+/* servicios */
+.contenedor_servicios_home{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: #363636;
+}
+
+.contenedor_servicios_home_content1{
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.contenedor_servicios_home_sec1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 66%;
+}
+
+.serviciosButton {
+  margin-top: 25px;
+  background: #dc5719;
+  color: white;
+  font-family: inherit;
+  padding: 2px;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #dc5719;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3em;
+  width: 200px;
+}
+
+.contenedor_servicios_home_sec1_titulo{
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.contenedor_servicios_home_sec1_div{
+  color: #dcdcdc;
+  text-align: justify;
+  padding: 10px 0;
+}
+
+.contenedor_servicios_home_sec2{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor_servicios_home_sec2_content{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor_servicios_home_sec2_fila1{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+}
+
+.contenedor_servicios_home_sec2_fila2{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+}
+
+.iconButtonhome_service {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #dc5719;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.serviciosButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #f47e48;
+}
+
+.serviciosButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em #f47e48;
+}
+
+
+
+.card_home_service {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 250px;
+  background-color: #292929;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.icon_home_service {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 80px;
+  background: linear-gradient(90deg, #dc5719 0%, #f47e48 40%, rgba(0, 0, 0, 0.28) 60%);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.icon_home_service svg {
+  fill: white;
+}
+
+.card_home_service .title_home_service {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.card_home_service .text_home_service {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+
+.card_home_service:hover {
+  height: 280px;
+}
+
+.text_home_service{
+  overflow: hidden;
+}
+
+.card_home_service:hover .text_home_service {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 80px;
+}
+
+.card_home_service:hover .icon_home_service {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+
+.card_home_service:hover .icon_home_service svg path {
+  fill: url('#gradientColor');
+  transition: all 0.3s ease;
+}
+/* servicios */
+
+@media screen and (max-width: 1750px) {
+
+  .contenedor_servicios_home_content1 {
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width: 1350px) {
+
+  .contenedor_imagen_medio{
+    width: 100%;
+    height: 255px;
+    margin-top: 60px;
+  }
+
+  .contenedor_imagen_medio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+
+  .ofertas_responsive{
+    display: block;
+  }
+
+  .ofertas{
+    display: none ;
+  }
+
+  .contenedor_servicios_home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor_servicios_home_content1 {
+    width: 100%;
+  }
+
+  .contenedor_servicios_home_sec2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .contenedor_servicios_home_sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+  }
+  .contenedor_servicios_home_sec2_fila1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor_servicios_home_sec2_fila2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .contenedor_servicios_home_sec2_content {
+    justify-content: center;
+  }
+}
+
+
+
+
