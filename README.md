@@ -1,1 +1,1 @@
-Proyect MEDALSAC by COnsulting Nexr
+Proyect MEDALSAC by Consulting Next
