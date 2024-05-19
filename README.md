@@ -1,1 +1,2 @@
-Proyect MEDALSAC by Consulting Next
+# INSTALAR VITE
+npm install --save-dev vite
